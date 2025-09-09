@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Animations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive CSS + JS Animations</h1>
+
+  <!-- Part 1: CSS-only animation -->
+  <button class="fancy-btn">Hover Me</button>
+
+  <!-- Part 2: JavaScript Functions -->
+  <section class="function-demo">
+    <h2>Function Demo</h2>
+    <input type="number" id="numInput" placeholder="Enter a number">
+    <button onclick="doubleNumber()">Double It</button>
+    <p id="result"></p>
+  </section>
+
+  <!-- Part 3: Combined Animations -->
+  <section class="animation-demo">
+    <h2>Click to Animate Box</h2>
+    <div class="box" id="box"></div>
+    <button onclick="triggerAnimation()">Animate Box</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

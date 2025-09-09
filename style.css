@@ -1,0 +1,50 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: #f5f7fa;
+}
+
+/* ------------------- */
+/* PART 1: CSS ONLY    */
+
+.fancy-btn {
+  padding: 12px 24px;
+  background: #6a5acd;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Hover animation */
+.fancy-btn:hover {
+  transform: scale(1.1);
+  background: #836fff;
+}
+
+/* ------------------- */
+/* PART 3: BOX ANIMATION */
+/* ------------------- */
+.box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/* Keyframe animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-80px); }
+  100% { transform: translateY(0); }
+}
+
+/* Class added by JS */
+.animate {
+  animation: bounce 1s ease-in-out;
+}
